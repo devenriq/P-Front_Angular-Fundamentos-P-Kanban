@@ -7,4 +7,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'kanban-project';
+
+  states:string[]=['Por hacer', 'En progreso', 'Finalizado']
+  categories:string[]=['Trabajo', 'Hogar', 'Educacion', 'Personal']
+  priorities:string[]=['Alta', 'Media', 'Baja']
+
+  addField(event:Event){
+    const element = event.target as HTMLInputElement
+    console.log(element.value)
+  }
 }

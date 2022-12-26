@@ -9,3 +9,11 @@
 body{
   height: 100vh;
 }
+
+.form-container{
+  height: 340px;
+}
+
+.table-container{
+  min-height: 35vh;
+}
