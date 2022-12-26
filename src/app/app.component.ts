@@ -16,4 +16,8 @@ export class AppComponent {
     const element = event.target as HTMLInputElement
     console.log(element.value)
   }
+
+  addCard(event:Event){
+    this.newCardElem = document.createElement('div')
+  }
 }

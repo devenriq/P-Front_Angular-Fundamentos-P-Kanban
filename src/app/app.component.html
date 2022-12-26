@@ -34,6 +34,7 @@
       </div>
 
       <button
+        (click)="addCard($event) onSubmit()"
         class="btn btn-outline-primary position-absolute bottom-0 start-50 translate-middle-x"
       >
         Agregar Tarea
@@ -47,7 +48,20 @@
     <div class="row">
       <div class="col p-3">
         <h3 class="fs-5">Por hacer</h3>
-        <div class="to-make-container"></div>
+        <div class="to-make-container">
+          <div
+            class="card-container w-100 bg-danger rounded p-2 position-relative"
+          >
+            <button class="position-absolute top-0 end-0">X</button>
+            <p>Description</p>
+            <p>Category</p>
+            <p>priority</p>
+            <div class="button-container d-flex f-row justify-content-between">
+              <button class="left-button"><</button>
+              <button class="right-button">></button>
+            </div>
+          </div>
+        </div>
       </div>
       <div class="col p-3">
         <h3 class="fs-5">En progreso</h3>
