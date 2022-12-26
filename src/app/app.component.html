@@ -1,24 +1,46 @@
-<h1>Kanban</h1>
+<div class="">
+  <h1 class="text-center">Kanban</h1>
 
-<h2>Creación de tareas</h2>
-<h3>Descripción</h3>
-<input type="text" />
-<h3>Estado</h3>
-<select name="" id="">
-  <option value="">Por hacer</option>
-  <option value="">En progreso</option>
-  <option value="">Finalizado</option>
-</select>
-<h3>Categoría</h3>
-<select name="" id="">
-  <option value="">Trabajo</option>
-  <option value="">Hogar</option>
-  <option value="">Educación</option>
-  <option value="">Personal</option>
-</select>
-<h3>Prioridad</h3>
-<select name="" id="">
-  <option value="">Alta</option>
-  <option value="">Media</option>
-  <option value="">Baja</option>
-</select>
+  <div class="d-flex position-relative h-50">
+    <form class="m-auto bg-warning p-3 rounded">
+      <h2 class="fs-4 text-center">Creación de tareas</h2>
+      <div class="d-flex f-row align-items-center gap-3 pt-2 pb-1">
+        <h3 class="fs-5">Descripción</h3>
+        <input type="text" class="form-control" />
+      </div>
+      <div class="d-flex f-row align-items-center gap-3 pt-2 pb-1">
+        <h3 class="fs-5">Estado</h3>
+        <select name="" id="" class="form-control">
+          <option value="">Por hacer</option>
+          <option value="">En progreso</option>
+          <option value="">Finalizado</option>
+        </select>
+      </div>
+      <div class="d-flex f-row align-items-center gap-3 pt-1 pb-1">
+        <h3 class="fs-5">Categoría</h3>
+        <select name="" id="" class="form-control">
+          <option value="">Trabajo</option>
+          <option value="">Hogar</option>
+          <option value="">Educación</option>
+          <option value="">Personal</option>
+        </select>
+      </div>
+      <div class="d-flex f-row align-items-center gap-3 pt-2 pb-1">
+        <h3 class="fs-5">Prioridad</h3>
+        <select name="" id="" class="form-control">
+          <option value="">Alta</option>
+          <option value="">Media</option>
+          <option value="">Baja</option>
+        </select>
+      </div>
+
+      <button
+        class="btn btn-outline-primary position-absolute bottom-0 start-50 translate-middle-x"
+      >
+        Agregar Tarea
+      </button>
+    </form>
+  </div>
+
+  <div class="table bg-info h-100"></div>
+</div>
